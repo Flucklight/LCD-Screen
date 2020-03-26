@@ -4,13 +4,11 @@
 #use delay(INTERNAL = 8000000)                                 //Configuramos el reloj interno a 8MHz
 #include<lcd.c>                                                //Incluimos la libreria para la pantalla LCD
 
-void main() 
-{
+void main() {
    
    lcd_init ();            //Instruccion para la funcion de inicializacion de la pantalla LCD
    
-   WHILE (TRUE)
-   {
+   WHILE (TRUE) {
       printf (lcd_putc, "\f");   //Limpiamos pantalla
 
       lcd_gotoxy (1, 1);        //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
