@@ -11,22 +11,16 @@ void main() {
    
    while(TRUE) {
 
-<<<<<<< HEAD
       printf(lcd_putc, "\f");                                //Limpiamos pantalla
 
       for(efect = 16; efect >= 0; efect = efect - 1) {       //Este for genera un efecto de recorrido en la pantalla
          lcd_gotoxy(efect,1);                                //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
-=======
-      for(mov = 16; mov >= 0; mov--) {                       //Este for genera un efecto de recorrido en la pantalla
-         lcd_gotoxy(mov,1);                                  //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
->>>>>>> b31c09c72b97b800346a8f5ac1bca794a1c1cb9d
          printf(lcd_putc, "Julio Cesar");                    //Manda a imprimir el nombre "Julio Cesar"
          lcd_gotoxy(efect,2);                                //Mueve el apuntador interno a la 2da fila y decrementa conforme a la variable en la columna
          printf(lcd_putc, "Jimenez Bolio");                  //Manda a imprimir el apellido "Jimenez Bolio"
          delay_ms(100);                                      //Tiene un retraso de 100 milisegundos
       }
 
-<<<<<<< HEAD
       printf(lcd_putc, "\f");                               //Limpiamos pamtalla
 
       for(efect = 16; efect >= 0; efect = efect - 1) {      //Este for genera un efecto de recorrido en la pantalla
@@ -35,14 +29,6 @@ void main() {
          lcd_gotoxy(efect,2);                               //Mueve el apuntador interno a la 2da fila y decrementa conforme a la variable en la columna
          printf(lcd_putc, "Sanchez Sanchez");               //Manda a imprimir el apellido "Sanchez Sanchez"
          delay_ms(100);                                     //Tiene un retraso de 100 milisegundos
-=======
-      for(mov = 16; mov >= 0; mov--) {                       //Este for genera un efecto de recorrido en la pantalla
-         lcd_gotoxy(mov,1);                                  //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
-         printf(lcd_putc, "Victor Manuel");                  //Manda a imprimir el nombre "Victor Manuel"
-         lcd_gotoxy(mov,2);                                  //Mueve el apuntador interno a la 2da fila y decrementa conforme a la variable en la columna
-         printf(lcd_putc, "Sanchez Sanchez");                //Manda a imprimir el apellido "Sanchez Sanchez"
-         delay_ms(100);                                      //Tiene un retraso de 100 milisegundos
->>>>>>> b31c09c72b97b800346a8f5ac1bca794a1c1cb9d
       }
       
    }
