@@ -11,8 +11,6 @@ void main() {
    
    while(TRUE) {
 
-      printf(lcd_putc, '/f');
-
       for(mov = 16; mov >= 0; mov--) {                       //Este for genera un efecto de recorrido en la pantalla
          lcd_gotoxy(mov,1);                                  //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
          printf(lcd_putc, "Julio Cesar");                    //Manda a imprimir el nombre "Julio Cesar"
@@ -20,8 +18,6 @@ void main() {
          printf(lcd_putc, "Jimenez Bolio");                  //Manda a imprimir el apellido "Jimenez Bolio"
          delay_ms(100);                                      //Tiene un retraso de 100 milisegundos
       }
-
-      printf(lcd_putc, '/f');
 
       for(mov = 16; mov >= 0; mov--) {                       //Este for genera un efecto de recorrido en la pantalla
          lcd_gotoxy(mov,1);                                  //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
