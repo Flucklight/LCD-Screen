@@ -1,4 +1,3 @@
-
 #include<16f887.h>                                             //Incluimos la libreria para el PIC16F887
 #fuses INTRC_IO, NOWDT, PROTECT, NOLVP, MCLR, NOBROWNOUT       //Configuramos los registros del PIC para trabajar con el algoritmo a programar
 #use delay(INTERNAL = 8000000)                                 //Configuramos el reloj interno a 8MHz
