@@ -11,19 +11,19 @@ void main() {
    WHILE (TRUE) {
       printf (lcd_putc, "\f");   //Limpiamos pantalla
 
-      lcd_gotoxy (1, 1);        //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
+      lcd_gotoxy (1, 1);        //Mueve el apuntador interno a la 1ra fila
       printf (lcd_putc, "Julio Cesar");     //Manda a imprimir el nombre "Julio Cesar"
-      lcd_gotoxy (1, 2);        //Mueve el apuntador interno a la 2da fila y decrementa conforme a la variable en la columna
+      lcd_gotoxy (1, 2);        //Mueve el apuntador interno a la 2da fila
       printf (lcd_putc, "Jimenez Bolio");    //Manda a imprimir el apellido "Jimenez Bolio"
-      delay_ms (2000);         //Tiene un retraso de 100 milisegundos
+      delay_ms (2000);         //Tiene un retraso de 2000 milisegundos
       
       printf (lcd_putc, "\f");        //Limpiamos pamtalla
 
-      lcd_gotoxy (1, 1);        //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
+      lcd_gotoxy (1, 1);        //Mueve el apuntador interno a la 1ra fila
       printf (lcd_putc, "Victor Manuel");    //Manda a imprimir el nombre "Victor Manuel"
-      lcd_gotoxy (1, 2);        //Mueve el apuntador interno a la 2da fila y decrementa conforme a la variable en la columna
+      lcd_gotoxy (1, 2);        //Mueve el apuntador interno a la 2da fila
       printf (lcd_putc, "Sanchez Sanchez");    //Manda a imprimir el apellido "Sanchez Sanchez"
-      delay_ms (2000);         //Tiene un retraso de 100 milisegundos
+      delay_ms (2000);         //Tiene un retraso de 2000 milisegundos
    }
 }
 
