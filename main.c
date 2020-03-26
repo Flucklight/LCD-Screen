@@ -9,8 +9,10 @@ void main() {
    
    lcd_init();                                               //Instruccion para la funcion de inicializacion de la pantalla LCD
    
-   while(TRUE) {                                //Limpiamos pantalla
-
+   while(TRUE) {                                
+   
+      printf(lcd_putc, "\f");             //Limpiamos pantalla
+      
       for(a = 1; a <= 10; a++) {       //Este for genera un efecto de recorrido en la pantalla
          lcd_gotoxy(1,1);                                //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
          printf(lcd_putc, "\fJulio Cesar");                    //Manda a imprimir el nombre "Julio Cesar"
