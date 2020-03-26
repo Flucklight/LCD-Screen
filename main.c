@@ -9,13 +9,11 @@ void main() {
    
    lcd_init();                                               //Instruccion para la funcion de inicializacion de la pantalla LCD
    
-   while(TRUE) {
+   while(TRUE) {                                //Limpiamos pantalla
 
-      printf(lcd_putc, "\f");                                //Limpiamos pantalla
-
-      for(a = 0; a <= 10; a++) {       //Este for genera un efecto de recorrido en la pantalla
+      for(a = 1; a <= 10; a++) {       //Este for genera un efecto de recorrido en la pantalla
          lcd_gotoxy(a,1);                                //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
-         printf(lcd_putc, "Julio Cesar");                    //Manda a imprimir el nombre "Julio Cesar"
+         printf(lcd_putc, "\fJulio Cesar");                    //Manda a imprimir el nombre "Julio Cesar"
          lcd_gotoxy(a,2);                                //Mueve el apuntador interno a la 2da fila y decrementa conforme a la variable en la columna
          printf(lcd_putc, "Jimenez Bolio");                  //Manda a imprimir el apellido "Jimenez Bolio"
          delay_ms(100);                                      //Tiene un retraso de 100 milisegundos
@@ -23,9 +21,9 @@ void main() {
 
       printf(lcd_putc, "\f");                               //Limpiamos pamtalla
 
-      for(a = 0; a <= 10; a++) {      //Este for genera un efecto de recorrido en la pantalla
+      for(a = 1; a <= 10; a++) {      //Este for genera un efecto de recorrido en la pantalla
          lcd_gotoxy(a,1);                               //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
-         printf(lcd_putc, "Victor Manuel");                 //Manda a imprimir el nombre "Victor Manuel"
+         printf(lcd_putc, "\fVictor Manuel");                 //Manda a imprimir el nombre "Victor Manuel"
          lcd_gotoxy(a,2);                               //Mueve el apuntador interno a la 2da fila y decrementa conforme a la variable en la columna
          printf(lcd_putc, "Sanchez Sanchez");               //Manda a imprimir el apellido "Sanchez Sanchez"
          delay_ms(100);                                     //Tiene un retraso de 100 milisegundos
