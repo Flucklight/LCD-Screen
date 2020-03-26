@@ -4,7 +4,7 @@
 
 #include<lcd.c>                                                //Incluimos la libreria para la pantalla LCD
 
-int8 a;                                              //Variable para la funcion de movimiento
+int a;                                              //Variable para la funcion de movimiento
 void main() {
    
    lcd_init();                                               //Instruccion para la funcion de inicializacion de la pantalla LCD
@@ -12,9 +12,9 @@ void main() {
    while(TRUE) {                                //Limpiamos pantalla
 
       for(a = 1; a <= 10; a++) {       //Este for genera un efecto de recorrido en la pantalla
-         lcd_gotoxy(a,1);                                //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
+         lcd_gotoxy(1,1);                                //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
          printf(lcd_putc, "\fJulio Cesar");                    //Manda a imprimir el nombre "Julio Cesar"
-         lcd_gotoxy(a,2);                                //Mueve el apuntador interno a la 2da fila y decrementa conforme a la variable en la columna
+         lcd_gotoxy(1,2);                                //Mueve el apuntador interno a la 2da fila y decrementa conforme a la variable en la columna
          printf(lcd_putc, "Jimenez Bolio");                  //Manda a imprimir el apellido "Jimenez Bolio"
          delay_ms(100);                                      //Tiene un retraso de 100 milisegundos
       }
@@ -22,9 +22,9 @@ void main() {
       printf(lcd_putc, "\f");                               //Limpiamos pamtalla
 
       for(a = 1; a <= 10; a++) {      //Este for genera un efecto de recorrido en la pantalla
-         lcd_gotoxy(a,1);                               //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
+         lcd_gotoxy(1,1);                               //Mueve el apuntador interno a la 1ra fila y decrementa conforme a la variable en la columna
          printf(lcd_putc, "\fVictor Manuel");                 //Manda a imprimir el nombre "Victor Manuel"
-         lcd_gotoxy(a,2);                               //Mueve el apuntador interno a la 2da fila y decrementa conforme a la variable en la columna
+         lcd_gotoxy(1,2);                               //Mueve el apuntador interno a la 2da fila y decrementa conforme a la variable en la columna
          printf(lcd_putc, "Sanchez Sanchez");               //Manda a imprimir el apellido "Sanchez Sanchez"
          delay_ms(100);                                     //Tiene un retraso de 100 milisegundos
       }
