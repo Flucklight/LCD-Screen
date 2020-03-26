@@ -4,7 +4,7 @@
 
 #include<lcd.c>                                                //Incluimos la libreria para la pantalla LCD
 
-unsigned int efect;                                              //Variable para la funcion de movimiento
+int8 efect;                                              //Variable para la funcion de movimiento
 void main() {
    
    lcd_init();                                               //Instruccion para la funcion de inicializacion de la pantalla LCD
